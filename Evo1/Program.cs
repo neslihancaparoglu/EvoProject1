@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,9 +22,10 @@ namespace Evo1
             Console.WriteLine();
             int question = 1;
             string answer;
+            int results=10;
             if(question == 1)
             {
-                Console.WriteLine(" Soru 1: İnt ne tipidir?");
+                Console.WriteLine("Soru 1: İnt ne tipidir?");
                 Console.WriteLine("A)Değer tipi");
                 Console.WriteLine("B)Referans tipi");
                 Console.WriteLine("C)Char tipi ");
@@ -37,7 +39,10 @@ namespace Evo1
                     Console.WriteLine("Cevabınız doğru ");
                     question= question+ 1 ;
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız: 0"); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:9");
+                    results = results--;
+                }
+              
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -57,7 +62,9 @@ namespace Evo1
                     Console.WriteLine("Cevabınız doğru ");
                     question = question + 1;
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:1 "); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:8 ");
+                    results = results--;
+                }
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -75,7 +82,9 @@ namespace Evo1
                     Console.WriteLine("Cevabınız doğru ");
                     question = question + 1;
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:2 "); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:7 ");
+                    results = results--;
+                }
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -93,7 +102,9 @@ namespace Evo1
                     Console.WriteLine("Cevabınız doğru ");
                     question = question + 1;
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:3 "); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:6 ");
+                    results = results--;
+                }
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -111,7 +122,9 @@ namespace Evo1
                     Console.WriteLine("Cevabınız doğru ");
                     question = question + 1;
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:4 "); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:5 ");
+                    results = results--;
+                }
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -131,7 +144,9 @@ namespace Evo1
                     Console.WriteLine("Cevabınız doğru ");
                     question = question + 1;
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:5 "); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:4 ");
+                    results = results--;
+                }
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -151,7 +166,9 @@ namespace Evo1
                     Console.WriteLine("Cevabınız doğru ");
                     question = question + 1;
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:6 "); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:3 ");
+                    results = results--;
+                }
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -171,7 +188,9 @@ namespace Evo1
                     Console.WriteLine("Cevabınız doğru ");
                     question = question + 1;
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:7 "); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:2 ");
+                    results = results--;
+                }
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -191,7 +210,9 @@ namespace Evo1
                     Console.WriteLine("Cevabınız doğru ");
                     question = question + 1;
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:8 "); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:1 ");
+                    results = results--;
+                }
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -211,10 +232,17 @@ namespace Evo1
                     Console.WriteLine("Tebrikler sınavınız bitti tüm soruları doğru cevapladınız :) ");
                     
                 }
-                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:9 "); }
+                else { Console.WriteLine("Cevabınız hatalı, başarı puanınız:0 ");
+                    results = results--;
+                }
                 Console.ReadKey();
                 Console.Clear();
             }
+            if (results >= 7)
+            {
+                Console.WriteLine("Sınavı başarılı bir şekilde TAMAMLADINIZ. ");
+            }
+            else Console.WriteLine("Sınavı GEÇEMEDİNİZ.");
         }
         
     } 
