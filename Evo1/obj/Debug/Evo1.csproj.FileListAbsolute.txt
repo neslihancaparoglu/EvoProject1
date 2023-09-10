@@ -1,0 +1,8 @@
+C:\Users\NESLİHAN\Source\Repos\Evo1\Evo1\bin\Debug\Evo1.exe.config
+C:\Users\NESLİHAN\Source\Repos\Evo1\Evo1\bin\Debug\Evo1.exe
+C:\Users\NESLİHAN\Source\Repos\Evo1\Evo1\bin\Debug\Evo1.pdb
+C:\Users\NESLİHAN\Source\Repos\Evo1\Evo1\obj\Debug\Evo1.csproj.AssemblyReference.cache
+C:\Users\NESLİHAN\Source\Repos\Evo1\Evo1\obj\Debug\Evo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\NESLİHAN\Source\Repos\Evo1\Evo1\obj\Debug\Evo1.csproj.CoreCompileInputs.cache
+C:\Users\NESLİHAN\Source\Repos\Evo1\Evo1\obj\Debug\Evo1.exe
+C:\Users\NESLİHAN\Source\Repos\Evo1\Evo1\obj\Debug\Evo1.pdb
